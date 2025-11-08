@@ -1,3 +1,28 @@
+// Theme Toggle
+const themeToggle = document.getElementById('themeToggle');
+const themeToggleSlider = document.querySelector('.theme-toggle-slider');
+const html = document.documentElement;
+
+// Load saved theme or default to light
+const savedTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', savedTheme);
+updateThemeIcon(savedTheme);
+
+// Theme toggle event listener
+themeToggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+});
+
+// Update theme toggle icon
+function updateThemeIcon(theme) {
+    themeToggleSlider.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+
 // Mobile Menu Toggle
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const navMenu = document.getElementById('navMenu');
