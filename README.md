@@ -62,9 +62,7 @@ The color scheme can be customized by modifying the CSS variables in `css/styles
 
 ```css
 :root {
-    --primary-color: #0066cc;
-    --primary-dark: #004c99;
-    --secondary-color: #00cccc;
+    --accent-color: #2B6CB0;
     /* ... more variables */
 }
 ```
