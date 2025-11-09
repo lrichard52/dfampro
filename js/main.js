@@ -114,73 +114,77 @@ window.addEventListener('scroll', highlightNavigation);
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
+if (contactForm && formMessage) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
+        // Get form data
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData);
 
-    // Basic validation
-    if (!data.name || !data.email || !data.message) {
-        showFormMessage('Please fill in all required fields.', 'error');
-        return;
-    }
+        // Basic validation
+        if (!data.name || !data.email || !data.message) {
+            showFormMessage('Please fill in all required fields.', 'error');
+            return;
+        }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email)) {
-        showFormMessage('Please enter a valid email address.', 'error');
-        return;
-    }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(data.email)) {
+            showFormMessage('Please enter a valid email address.', 'error');
+            return;
+        }
 
-    // Show loading state
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalBtnText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
+        // Show loading state
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
 
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
-        // Success message
-        showFormMessage('Thank you for your message! We will get back to you soon.', 'success');
-        contactForm.reset();
-
-        // Reset button
-        submitBtn.textContent = originalBtnText;
-        submitBtn.disabled = false;
-
-        // Log form data (in production, this would be sent to a server)
-        console.log('Form submitted with data:', data);
-    }, 1500);
-
-    // In production, replace the setTimeout above with an actual API call:
-    /*
-    try {
-        const response = await fetch('/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
-
-        if (response.ok) {
+        // Simulate form submission (replace with actual API call)
+        setTimeout(() => {
+            // Success message
             showFormMessage('Thank you for your message! We will get back to you soon.', 'success');
             contactForm.reset();
-        } else {
-            showFormMessage('Something went wrong. Please try again later.', 'error');
+
+            // Reset button
+            submitBtn.textContent = originalBtnText;
+            submitBtn.disabled = false;
+
+            // Log form data (in production, this would be sent to a server)
+            console.log('Form submitted with data:', data);
+        }, 1500);
+
+        // In production, replace the setTimeout above with an actual API call:
+        /*
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                showFormMessage('Thank you for your message! We will get back to you soon.', 'success');
+                contactForm.reset();
+            } else {
+                showFormMessage('Something went wrong. Please try again later.', 'error');
+            }
+        } catch (error) {
+            showFormMessage('Network error. Please check your connection and try again.', 'error');
+        } finally {
+            submitBtn.textContent = originalBtnText;
+            submitBtn.disabled = false;
         }
-    } catch (error) {
-        showFormMessage('Network error. Please check your connection and try again.', 'error');
-    } finally {
-        submitBtn.textContent = originalBtnText;
-        submitBtn.disabled = false;
-    }
-    */
-});
+        */
+    });
+}
 
 function showFormMessage(message, type) {
+    if (!formMessage) return;
+
     formMessage.textContent = message;
     formMessage.className = `form-message ${type}`;
     formMessage.style.display = 'block';

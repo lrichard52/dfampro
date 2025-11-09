@@ -70,7 +70,11 @@ The color scheme can be customized by modifying the CSS variables in `css/styles
 ```
 
 ### Content
-Update the content directly in `index.html` to match your business needs.
+For a mapped list of what to edit (titles, text, and images) with file/line pointers, see `CONTENT.md`.
+
+Quick start:
+- Edit text directly in `index.html` and `projects.html`.
+- Place images under `images/` and update `<img src>` paths accordingly.
 
 ### Contact Form
 The contact form currently uses a simulated submission. To implement actual form submission, modify the form handler in `js/main.js` to integrate with your backend API or email service.
