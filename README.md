@@ -68,6 +68,10 @@ The color scheme can be customized by modifying the CSS variables in `css/styles
 ```
 
 ### Content
+Most content is now driven by `content.json`. Edit that file to update titles, copy, and images across the site.
+
+Note: Loading JSON requires a local server (browsers block `file://` fetches). Use one of the commands below and visit `http://localhost:8000`.
+
 For a mapped list of what to edit (titles, text, and images) with file/line pointers, see `CONTENT.md`.
 
 Quick start:

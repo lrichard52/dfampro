@@ -1,0 +1,189 @@
+{
+  "site": {
+    "brandName": "DFAM PRO",
+    "tagline": "Design for Additive Manufacturing",
+    "email": "info@dfampro.com",
+    "location": "Serving clients worldwide",
+    "phone": "Available upon request",
+    "footer": {
+      "year": "2025",
+      "blurb": "Expert consulting and training for Design for Additive Manufacturing"
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "DFAM PRO - Design for Additive Manufacturing Pro",
+      "description": "DFAM PRO - Design for Additive Manufacturing Consulting and Training Services"
+    },
+    "projects": {
+      "title": "DFAM PRO Projects",
+      "description": "DFAM PRO project gallery highlighting notable additive manufacturing programs and results."
+    }
+  },
+  "home": {
+    "heroTitle": "Transform Your Manufacturing with Additive Design",
+    "heroSubtitle": "Expert consulting and training for Design for Additive Manufacturing (DFAM)",
+    "services": {
+      "heading": "Our Services",
+      "subheading": "Comprehensive solutions to accelerate your additive manufacturing journey",
+      "cards": [
+        {
+          "title": "DFAM Consulting",
+          "description": "Strategic guidance to optimize your designs for additive manufacturing. We help you reduce costs, improve performance, and accelerate time-to-market.",
+          "features": [
+            "Design optimization and review",
+            "Material selection guidance",
+            "Process feasibility analysis",
+            "Cost-benefit analysis"
+          ]
+        },
+        {
+          "title": "Training Programs",
+          "description": "Comprehensive training programs tailored to your team's needs. From fundamentals to advanced DFAM techniques.",
+          "features": [
+            "Custom curriculum development",
+            "Hands-on workshops",
+            "Online and on-site options",
+            "Certification programs"
+          ]
+        },
+        {
+          "title": "Technical Support",
+          "description": "Ongoing technical support to ensure your additive manufacturing projects succeed. Expert advice when you need it most.",
+          "features": [
+            "Project troubleshooting",
+            "Design review services",
+            "Technology assessment",
+            "Implementation support"
+          ]
+        }
+      ]
+    },
+    "about": {
+      "title": "About DFAM PRO",
+      "lead": "Leading experts in Design for Additive Manufacturing",
+      "paragraphs": [
+        "At DFAM PRO, we specialize in helping businesses unlock the full potential of additive manufacturing. Our team brings years of experience in design optimization, material science, and manufacturing processes to deliver results that matter.",
+        "We understand that transitioning to or optimizing additive manufacturing can be challenging. That's why we provide end-to-end support, from initial concept through to production, ensuring your team has the knowledge and confidence to succeed."
+      ],
+      "features": [
+        { "title": "Industry Experience", "description": "Proven track record across aerospace, automotive, medical, and industrial sectors" },
+        { "title": "Expert Team", "description": "Certified professionals with deep expertise in AM technologies and design principles" },
+        { "title": "Results-Driven", "description": "Focused on delivering measurable improvements in cost, performance, and time-to-market" }
+      ],
+      "image": {
+        "src": "",
+        "alt": ""
+      }
+    },
+    "contact": {
+      "heading": "Get in Touch",
+      "subtitle": "Ready to transform your manufacturing process? Let's talk."
+    }
+  },
+  "projectsPage": {
+    "hero": {
+      "eyebrow": "Case Studies & Proof Points",
+      "title": "High-impact additive manufacturing programs",
+      "subtitle": "A snapshot of the interdisciplinary work we deliver—pairing data-driven DFAM strategy, application engineering, and on-site enablement to de-risk adoption for regulated industries.",
+      "buttons": [
+        { "text": "See Services", "href": "index.html#services" },
+        { "text": "Discuss Your Build", "href": "index.html#contact" }
+      ]
+    },
+    "highlights": [
+      { "stat": "70+", "caption": "Programs delivered across aerospace, medical, energy, and mobility." },
+      { "stat": "4.8/5", "caption": "Average post-training satisfaction score from technical teams." },
+      { "stat": "$12M", "caption": "Estimated client-side savings from consolidated DFAM redesigns." }
+    ],
+    "projects": [
+      {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Topology optimized satellite bracket"
+        },
+        "label": "Flight-qualified hardware",
+        "industry": "Aerospace",
+        "tech": "Material: Ti6Al4V · Process: DMLS",
+        "title": "Topology-optimized satellite bracket",
+        "description": "Led structural redesign, validated fatigue performance through digital twins, and authored the qualification plan that allowed rapid acceptance for a LEO constellation.",
+        "results": [
+          "42% mass reduction",
+          "3× stiffness-to-weight increase",
+          "12 weeks schedule savings"
+        ],
+        "tags": ["Topology optimization", "Qualification", "Finite element automation"]
+      },
+      {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Conformal cooling insert"
+        },
+        "label": "Production tooling",
+        "industry": "Industrial",
+        "tech": "Material: Maraging Steel · Process: SLM",
+        "title": "Conformal cooling mold insert",
+        "description": "Created parametric lattice channels, implemented lattice-based CFD verification, and trained the shop floor team on inspection workflows for serialized production.",
+        "results": [
+          "38% cycle-time reduction",
+          "+22% dimensional repeatability",
+          "6 month payback period"
+        ],
+        "tags": ["Thermal management", "DFAM training", "Factory onboarding"]
+      },
+      {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Patient specific guide"
+        },
+        "label": "Regulated medical device",
+        "industry": "Medical",
+        "tech": "Material: PA 12 · Process: MJF",
+        "title": "Patient-specific surgical guide",
+        "description": "Delivered the CAD automation scripts, labeling strategy, and ISO 13485-compliant documentation to help the client scale same-day guides for complex spinal procedures.",
+        "results": [
+          "5 hr design automation turnaround",
+          "0 non-conformances through validation",
+          "+30% surgeon adoption"
+        ],
+        "tags": ["Workflow automation", "Regulatory", "Human factors"]
+      },
+      {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80",
+          "alt": "EV manifold"
+        },
+        "label": "Powertrain development",
+        "industry": "Mobility",
+        "tech": "Material: AlSi10Mg · Process: L-PBF",
+        "title": "Lightweight EV battery manifold",
+        "description": "Consolidated eight welded parts into a single printable unit, optimized internal fluid paths, and qualified X-ray inspection criteria for series production.",
+        "results": [
+          "87% part-count consolidation",
+          "1.5× flow efficiency gain",
+          "IP67 validated sealing"
+        ],
+        "tags": ["DFAM redesign", "Design for inspection", "Supply chain agility"]
+      }
+    ],
+    "approach": {
+      "eyebrow": "How we work",
+      "title": "Strategy, enablement, and embedded engineering support",
+      "body": "Every engagement combines rigorous application screening, co-design working sessions, and implementation playbooks so that your team can own the outcome after we hand off. We can plug in for a sprint or become an extension of your engineering staff.",
+      "steps": [
+        { "title": "Discovery & Alignment", "description": "Portfolio prioritization workshops aligned to cost, performance, and certification targets." },
+        { "title": "Design & Validation", "description": "Toolchain automation, simulation, and informal builds to de-risk before committing to production." },
+        { "title": "Transfer & Training", "description": "On-site playbooks, QA templates, and enablement sessions to embed capabilities with your team." }
+      ]
+    },
+    "cta": {
+      "title": "Have an application we should look at?",
+      "body": "Share a CAD file, requirement deck, or current bottleneck, and we'll reply with a first-pass DFAM opportunity assessment within two business days.",
+      "buttons": [
+        { "text": "Email the team", "href": "mailto:info@dfampro.com" },
+        { "text": "Book a discovery call", "href": "index.html#contact" }
+      ]
+    }
+  }
+}
+

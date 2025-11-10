@@ -1,8 +1,12 @@
 # Content Editing Guide
 
-This site is a simple static site (HTML/CSS/JS). You can edit text directly in the HTML files and swap images by changing `src` paths. Below is a quick map of what to edit and where.
+You now have a single file to edit most content: `content.json`. Editing that file updates titles, text blocks, and images across the site.
 
-If you prefer a single content file (JSON) to edit instead of touching HTML, let me know — I can wire that up so you only change one file.
+- Edit: `content.json`
+- Preview: run a local server (required for JSON fetch):
+  - `python -m http.server 8000` then visit `http://localhost:8000`
+
+If you prefer to edit HTML directly, the file/line map is still below for reference.
 
 ## Page Titles & Meta
 - Browser tab title: `index.html:8`, `projects.html:7`
@@ -61,7 +65,7 @@ If you prefer a single content file (JSON) to edit instead of touching HTML, let
 - CTA title, body, and buttons (email link): `projects.html:231-238`
 
 ## Images
-- Local images folder: `images/` (added to the repo). Place your files there, e.g. `images/hero.jpg`.
+- Local images folder: `images/` (added). Place your files there, e.g. `images/hero.jpg`.
 - Swap an image by changing the `src` attribute in `<img>` tags. Example:
   ```html
   <img src="images/your-photo.jpg" alt="Descriptive alt text" />
@@ -93,4 +97,3 @@ python -m http.server 8000
 - The contact form submission is simulated in `js/main.js`. To wire it to a backend/email service, swap the `setTimeout` block for a fetch to your API.
 - Keep headings short to avoid wrapping on small screens.
 - If anything feels repetitive to edit, I can centralize the content into one JSON file and auto-fill the pages on load.
-
