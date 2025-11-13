@@ -1,27 +1,27 @@
 {
   "site": {
-    "brandName": "DFAM PRO",
-    "tagline": "Design for Additive Manufacturing",
+    "brandName": "LSR 3D-Printing",
+    "tagline": "Expert 3D-Printing Consulting  ",
     "email": "info@dfampro.com",
-    "location": "Serving clients worldwide",
+    "location": "West Michigan",
     "phone": "Available upon request",
     "footer": {
       "year": "2025",
-      "blurb": "Expert consulting and training for Design for Additive Manufacturing"
+      "blurb": "Expert 3D-Printing consulting and education"
     }
   },
   "meta": {
     "home": {
-      "title": "DFAM PRO - Design for Additive Manufacturing Pro",
-      "description": "DFAM PRO - Design for Additive Manufacturing Consulting and Training Services"
+      "title": "LSR 3D-Printing - ",
+      "description": "LSR 3D Printing - 3D-Printing Consulting and Training Services"
     },
     "projects": {
-      "title": "DFAM PRO Projects",
-      "description": "DFAM PRO project gallery highlighting notable additive manufacturing programs and results."
+      "title": "3D-Printing Projects",
+      "description": "LSR 3DP project gallery highlighting notable 3D Printed projects"
     }
   },
   "home": {
-    "heroTitle": "Transform Your Manufacturing with Additive Design",
+    "heroTitle": "LSR 3DP - West Michigan's 3D Printing Experts",
     "heroSubtitle": "Expert consulting and training for Design for Additive Manufacturing (DFAM)",
     "services": {
       "heading": "Our Services",
